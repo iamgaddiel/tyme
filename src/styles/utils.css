@@ -1,0 +1,13 @@
+.mx-1{margin: 0px 6px}
+.mx-2{margin: 0px 2rem}
+.mx-3{margin: 0px 2.5rem}
+.mx-4{margin: 0px 3rem}
+.mr-1{margin: 0px 1rem}
+.mr-2{margin: 0px 2rem}
+.mr-3{margin: 0px 2.5rem}
+.mr-4{margin: 0px 3rem}
+
+/* install react-strap */
+.d-flex{
+    display: flex;
+}

@@ -1,0 +1,262 @@
+:root{
+    --orange-color: #ff5403;
+    --tablet-orange: #ffa733;
+    --mark-orange: #f37336;
+    --white-color: #fff;
+    --pale-white: #f5f0f0;
+    --gray-color: #f2f2f2;
+    --green-color: #5aba4a;
+    --text-fade: #bab9b9;
+    --blue-light: #009abb;
+    --blue-dark: #1e3e72;
+    --purple-color: #d88dbc;
+    --yellow-color: #f7cc3b;
+    --check-orange: #fbd5c3;
+    --check-green: #ceeac9;
+    --check-purple: #f3ddeb;
+    --check-yellow: #e8cb6e;
+    --pale-blue: #aabec6;
+}
+.homeScreen ion-button{
+    border: none;
+    box-shadow: none !important;
+}
+
+/* banner */
+.circle{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background: var(--gray-color);
+}
+
+.profile-preview{
+    border-radius: 10px;
+    padding: 10px;
+    /* height: 50px; */
+    width: 145px;
+    display: flex;
+    justify-content: end;
+}
+
+.banner-wrapper{
+    padding: 50px 30px;
+}
+
+.banner-header{
+    background: var(--white-color);
+    border-radius: 0px 0px 50px 50px;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.search-prescription{
+    width: 85%;
+    margin: auto;
+    overflow: hidden !important;
+    padding: 0px;
+    padding: 4px;
+}
+
+#search-label{
+    color: var(--text-fade);
+}
+
+#search-btn{
+    padding: 0px;
+}
+
+#search-item{
+    border-radius: 12px;
+    box-shadow: 5px 20px 12px #bbb;
+    margin-top: 5px;
+}
+
+
+/* ================================ */
+/* Prescription Card */
+/* ===================================== */
+#p-check{
+    /* color: var(--white-color); */
+    font-size: 40px;
+
+}
+
+.prescription-container{
+    background: var(--white-color);
+}
+
+.indicator{
+    padding: 3px;
+    /* background: var(--orange-color); */
+    border-radius: 10px;
+    height: 13vh;
+}
+
+.p-type-image-container{
+    display: flex;
+    align-items: center;
+    height: 13vh;
+}
+#p-type-image{
+    width: 60px;
+    height: 60px;
+    transform:  scaleX(-1);
+    transform: scaleY(-1);
+    -webkit-transform: scaleX(-1);
+    -webkit-transform: scaleY(-1);
+}
+.prescription-action,
+.p-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden !important;
+    height: 13vh;
+}
+.prescription-action{
+    width: 55px;
+}
+.p-action-check{
+    display: flex;
+    justify-content: center;
+}
+.p-action-btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* floating action button */
+a.button-native{
+    background: green !important;
+}
+
+/* Prescription Form */
+.p-form-top{
+    height: 40vh;
+    background-image: url('../images/pill-cup.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+}
+
+.p-form-bottom{
+    background: var(--white-color);
+    height: 90vh;
+    margin-top: 17rem;
+    border-radius: 45px 45px 0px 0px;
+    position: relative;
+    z-index: 10;
+    /* overflow-x: hidden; */
+}
+
+.p-form-input{
+    background: var(--pale-white);
+}
+
+.p-form-num, .dosage{
+    display: flex;
+    align-items: center;
+}
+
+.p-form-num{
+    justify-content: space-between;
+}
+
+#p-form-btn{
+    color: var(--white-color);
+    background: var(--mark-orange);
+    border-radius: 15px;
+    height: 35px;
+}
+
+#p-back-btn{
+    color: var(--gray-color);
+}
+
+.p-form-image{
+    height: 20vh;
+    overflow: hidden;
+}
+
+
+/* Profile Screen */
+.p-option, .p-option-content{
+    display: flex;
+}
+
+.p-option{
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    height: 25vh;
+}
+
+.p-option-content{
+    flex-direction: column;
+}
+
+.p-option.p-dark-blue{
+    background-color: var(--blue-dark);
+}
+.p-option.p-green{
+    background-color: var(--green-color);
+}
+.p-option.p-orange{
+    background-color: var(--orange-color);
+}
+.p-option.p-blue-light{
+    background-color: var(--blue-light);
+}
+.p-option.p-pink{
+    background-color: pink;
+}
+.p-option.p-pale-blue{
+    background-color: var(--pale-blue);
+}
+
+/* unauthorized Dashboard */
+.db-action-div{
+    background: var(--blue-dark);
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+    height: 20vh;
+}
+.db-action-btn{
+    background: var(--orange-color) !important;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+.action-wrapper{
+    position: relative;
+}
+.db-action-panel-image{
+    width: 250px;
+    padding: 0;
+    position: absolute;
+    right: -50px;
+}
+.action-text{
+    width: 50%;
+    position: relative;
+    height: 16vh;
+    font-size: 1.2em;
+}
+
+/* Home Screen Cards */
+.home-card{
+    height: 20vh;
+}
