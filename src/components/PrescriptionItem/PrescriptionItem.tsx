@@ -4,6 +4,10 @@ import React from "react";
 
 import "./PrescriptionItem.css";
 
+import "../../assets/svgs/pill.svg"
+
+import '../../assets/svgs'
+
 type Props = {
   title: string;
   time: string;
@@ -23,6 +27,18 @@ const PrescriptionItem: React.FC<Props> = ({
   id,
   isChecked,
 }) => {
+
+    const handleImageSelection = (imageType: string) => {
+        switch (imageType) {
+            case "pill":
+                
+                break;
+        
+            default:
+                break;
+        }
+    }
+
   return (
     <IonCard className="item-card">
       <div className="indicator"></div>
@@ -38,6 +54,11 @@ const PrescriptionItem: React.FC<Props> = ({
             <IonIcon icon={timeOutline} slot="start" />
             {time}
           </span>
+        </div>
+      </div>
+      <div className="image">
+        <div className="image-wrapper">
+            <img src="" alt="" />
         </div>
       </div>
     </IonCard>
